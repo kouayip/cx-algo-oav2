@@ -12,8 +12,8 @@ function selectionSort(array) {
       array[min] = help;
     }
   }
-
-  return array;
 }
 
-console.log(selectionSort([1, 3, 6, 2, 9, 0, 4, 6]));
+const tab = [1, 3, 6, 2, 9, 0, 4, 6];
+selectionSort(tab);
+console.log(tab);
