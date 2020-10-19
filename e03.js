@@ -1,15 +1,15 @@
-function selectionSort(array) {
-  for (let i = 0; i < array.length - 1; i++) {
+function selectionSort(tab) {
+  for (let i = 0; i < tab.length - 1; i++) {
     let min = i;
-    for (let j = i + 1; j < array.length; j++) {
-      if (array[j] < array[min]) {
+    for (let j = i + 1; j < tab.length; j++) {
+      if (tab[j] < tab[min]) {
         min = j;
       }
     }
     if (min != i) {
-      const help = array[i];
-      array[i] = array[min];
-      array[min] = help;
+      const help = tab[i];
+      tab[i] = tab[min];
+      tab[min] = help;
     }
   }
 }
